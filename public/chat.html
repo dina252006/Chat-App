@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="centered-container">
+        <h1>Chat-App</h1>
+        <div id="join-section">
+            <form action="" id="join-form">
+                <input type="text" id="username" placeholder="Enter Your Name" required/>
+                <input type="text" id="room" placeholder="Enter room code" required/>
+                <button type="submit">Join</button>
+            </form>
+        </div>
+
+        <div id="chat-section">
+            <div id="message-container">
+                <ul id="message"></ul>
+            </div>
+            <form action="" id="chat-form" enctype="multipart/form-data">
+                <input type="text" id="message-input" autocomplete="off">
+                <input type="file" name="" id="file-input" accept="image/*, video/*" />
+                <button>Send</button>
+                <div class="emojis">😊</div>
+                <div class="emoji-picker" id="emoji-picker">
+                    <button type="button" onclick="addEmoji('😊')">😊</button>
+                    <button type="button" onclick="addEmoji('😅')">😅</button>
+                    <button type="button" onclick="addEmoji('👍')">👍</button>
+                    <button type="button" onclick="addEmoji('👏')">👏</button>
+                    <button type="button" onclick="addEmoji('🔥')">🔥</button>
+                    <button type="button" onclick="addEmoji('❤️')">❤️</button>
+                  </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
